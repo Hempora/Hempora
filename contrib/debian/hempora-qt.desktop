@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Hempora
+Comment=Hempora P2P Cryptocurrency
+Comment[fr]=Hempora, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Hempora, eşten eşe kriptografik sanal para birimi
+Exec=hempora-qt %u
+Terminal=false
+Type=Application
+Icon=hempora128
+MimeType=x-scheme-handler/hempora;
+Categories=Office;Finance;

@@ -1,0 +1,26 @@
+[Unit]
+Description=Hempora's distributed currency daemon
+After=network.target
+
+[Service]
+User=hempora
+Group=hempora
+
+Type=forking
+PIDFile=/var/lib/hemporad/hemporad.pid
+
+ExecStart=/usr/bin/hemporad -daemon -pid=/var/lib/hemporad/hemporad.pid \
+          -conf=/etc/hempora/hempora.conf -datadir=/var/lib/hemporad
+
+ExecStop=-/usr/bin/hempora-cli -conf=/etc/hempora/hempora.conf \
+         -datadir=/var/lib/hemporad stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

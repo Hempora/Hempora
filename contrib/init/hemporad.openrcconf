@@ -1,0 +1,26 @@
+# /etc/conf.d/hemporad: config file for /etc/init.d/hemporad
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/hempora/hempora.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/hemporad"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/hemporad.pid"
+
+# Where to write hemporad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/hemporad"
+
+# User and group to own hemporad process
+#BITCOIND_USER="hempora"
+#BITCOIND_GROUP="hempora"
+
+# Path to hemporad executable
+#BITCOIND_BIN="/usr/bin/hemporad"
+
+# Nice value to run hemporad under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,11 @@
+[Protocol]
+exec=hempora-qt '%u'
+protocol=hempora
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
